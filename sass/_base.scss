@@ -1,0 +1,104 @@
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container
+{
+    position: relative;
+
+    max-width: 1153px;
+    margin: 0 auto;
+}
+
+.social
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @include mobile-small
+    {
+        position: static;
+
+        text-align: center;
+    }
+    .fa
+    {
+        font-size: 18px;
+        line-height: 110px;
+
+        display: inline-block;
+
+        padding: 0 3px;
+
+        @include mobile-small
+        {
+            line-height: 40px;
+        }
+    }
+}
+
+.section--subtitle
+{
+    margin-top: 14px;
+
+    text-align: center;
+    a
+    {
+        font-size: 35px;
+
+        position: relative;
+
+        text-transform: uppercase;
+
+        color: $font;
+        &:after
+        {
+            position: absolute;
+            top: 56px;
+            right: 0;
+            left: 0;
+
+            width: 0;
+            height: 0;
+            margin: 0 auto;
+
+            content: '';
+
+            border-right: 28px solid transparent;
+            border-left: 28px solid transparent;
+        }
+    }
+}
+
+@keyframes translate
+{
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%
+    {
+        transform: translateX(0);
+    }
+}
+@keyframes fadeInDown
+{
+    0%
+    {
+        transform: translate(-50%, -200%);
+
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform: translate(-50%, -50%);
+
+        opacity: 1;
+    }
+}

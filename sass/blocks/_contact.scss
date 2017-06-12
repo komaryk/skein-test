@@ -1,0 +1,148 @@
+.section__contact,
+.contact--info
+{
+    font-size: 0;
+    & > div
+    {
+        font-size: 11px;
+
+        display: inline-block;
+
+        box-sizing: border-box;
+        width: 50%;
+
+        vertical-align: top;
+
+        @include mobile
+        {
+            width: 100%;
+        }
+    }
+}
+.map
+{
+    position: relative;
+
+    height: 500px;
+
+    @include tablet
+    {
+        height: 665px;
+    }
+    #map
+    {
+        height: 100%;
+    }
+}
+.contact
+{
+    padding: 26px 54px 32px 34px;
+}
+.contact--form
+{
+    padding-bottom: 18px;
+}
+.form
+{
+    &--title
+    {
+        font-size: 18px;
+        font-weight: normal;
+    }
+    &--input
+    {
+        font-size: 12px;
+
+        display: block;
+
+        box-sizing: border-box;
+        min-width: 210px;
+        margin: 4px 0 15px;
+        padding: 6px 7px;
+
+        border: 1px solid rgba(201, 201, 201, .32);
+
+        @include mobile
+        {
+            width: 100%;
+        }
+        &__textarea
+        {
+            min-width: 278px;
+            min-height: 94px;
+
+            @include mobile
+            {
+                min-width: 100%;
+            }
+        }
+    }
+}
+.contact--info
+{
+    font-size: 0;
+
+    @include tablet
+    {
+        > .info--block
+        {
+            display: block;
+
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
+.info
+{
+    &--block
+    {
+        padding-bottom: 10px;
+
+        vertical-align: top;
+        &:nth-of-type(1)
+        {
+            padding-right: 43px;
+
+            @include mobile
+            {
+                padding-bottom: 16px;
+            }
+            @include tablet
+            {
+                padding-bottom: 16px;
+            }
+        }
+        &:nth-of-type(2)
+        {
+            padding-left: 22px;
+
+            border-left: 1px solid #818181;
+
+            @include mobile
+            {
+                padding: 0;
+
+                border: none;
+            }
+            @include tablet
+            {
+                padding: 0;
+
+                border: none;
+            }
+        }
+    }
+    &--title
+    {
+        font-size: 18px;
+
+        margin-bottom: 15px;
+    }
+    &--text
+    {
+        line-height: 16px;
+
+        letter-spacing: -.6px;
+    }
+}

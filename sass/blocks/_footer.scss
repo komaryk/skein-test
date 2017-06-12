@@ -1,0 +1,36 @@
+.footer
+{
+    line-height: 110px;
+
+    padding: 10px 0 6px;
+
+    color: $accent;
+    background-color: $brand;
+
+    @include mobile-small
+    {
+        line-height: 40px;
+    }
+    @include mobile
+    {
+        padding-top: 0;
+    }
+}
+.copy
+{
+    font-size: 11px;
+
+    @include mobile-small
+    {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1153px)
+{
+    .footer
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}

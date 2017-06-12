@@ -1,0 +1,22 @@
+.link
+{
+    font-size: 13px;
+
+    color: $brand-lighter;
+    &--article
+    {
+        line-height: 13px;
+        .fa:before
+        {
+            font-size: 10px;
+        }
+    }
+    &--more
+    {
+        line-height: 18px;
+    }
+    &--popular
+    {
+        line-height: 26px;
+    }
+}

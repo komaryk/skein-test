@@ -1,0 +1,15 @@
+@import "core/_reset.scss";
+@import "core/_variables.scss";
+@import "core/_mixin.scss";
+@import "_slick.scss";
+
+@import "_base.scss";
+// @import "fontawesome/_font-awesome.scss";
+@import "../fonts/font.sass";
+
+@import "components/_button.scss";
+@import "blocks/_header.scss";
+@import "blocks/_showcase.scss";
+@import "blocks/_main.scss";
+@import "blocks/_contact.scss";
+@import "blocks/_footer.scss"
